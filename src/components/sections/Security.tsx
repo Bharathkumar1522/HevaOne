@@ -58,7 +58,7 @@ export function SecuritySection() {
             <div className="security-feature__media relative min-h-[14rem] md:min-h-[18rem] lg:min-h-full">
               <Image
                 src="/security_padlock.png"
-                alt="Heva One security and audit controls"
+                alt="HevaONE security and audit controls"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 45vw"

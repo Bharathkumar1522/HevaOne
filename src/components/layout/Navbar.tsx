@@ -18,7 +18,7 @@ export function Navbar() {
         <a href="#home" aria-label="Go to Home" className="group flex shrink-0 items-center gap-2.5 pl-3.5 pr-5 border-r border-slate-100">
           <Image
             src="/logo.png"
-            alt="Heva One Logo"
+            alt="HevaONE Logo"
             width={24}
             height={24}
             className="h-5 w-auto saturate-[1.1] transition-transform duration-300 group-hover:scale-110"
@@ -26,7 +26,7 @@ export function Navbar() {
           />
           <div className="flex items-baseline gap-[3px]">
             <span className="text-[0.95rem] font-extrabold tracking-tight text-[var(--ink-strong)]">Heva</span>
-            <span className="text-[0.95rem] font-extrabold tracking-tight text-[var(--brand)]">One</span>
+            <span className="text-[0.95rem] font-extrabold tracking-tight text-[var(--brand)]">ONE</span>
           </div>
         </a>
 

@@ -3,7 +3,6 @@ import type { NextRequest } from 'next/server';
 
 export function proxy(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
-  const isDev = process.env.NODE_ENV !== 'production';
 
   const cspHeader = `
     default-src 'self';

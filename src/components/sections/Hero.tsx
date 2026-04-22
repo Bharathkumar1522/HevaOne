@@ -38,7 +38,7 @@ export function HeroSection() {
           </h1>
 
           <p className="hero-body-enter mt-7 max-w-[54ch] text-[clamp(1.05rem,1.5vw,1.25rem)] leading-relaxed text-[var(--ink-soft)] text-balance">
-            Heva One unifies Workforce, POS, and Operations into one beautiful dashboard — whether you&apos;re in London, Sydney, or Mumbai.
+            HevaONE unifies Workforce, POS, and Operations into one beautiful dashboard — whether you&apos;re in London, Sydney, or Mumbai.
           </p>
 
           <div className="hero-cta-enter hero-actions mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -75,7 +75,7 @@ export function HeroSection() {
             <div className="hero-device hero-visual-primary relative aspect-[4/3] w-full rounded-[2rem] border-[1px] border-white/20 shadow-[0_45px_100px_rgba(15,23,42,0.18)] md:aspect-[21/10]">
               <Image
                 src="/hero-mockup.png"
-                alt="Heva One management dashboard on a laptop interface"
+                alt="HevaONE management dashboard on a laptop interface"
                 fill
                 priority
                 sizes="100vw"
@@ -88,7 +88,7 @@ export function HeroSection() {
             <div className="hero-device hero-visual-secondary absolute -bottom-10 -right-4 hidden aspect-[9/16] w-[22%] rounded-[1.8rem] md:block -rotate-2 transform-gpu shadow-[0_25px_60px_rgba(15,23,42,0.6)]">
               <Image
                 src="/hospitality_bg.png"
-                alt="Heva One staff app interface on a smartphone"
+                alt="HevaONE staff app interface on a smartphone"
                 fill
                 sizes="20vw"
                 className="object-cover rounded-[1.8rem]"

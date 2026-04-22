@@ -57,7 +57,11 @@ export function ComparisonSection() {
           {/* The Heva One Card (Elevated, Left) */}
           <Reveal delay={60} direction="left" className="z-20 w-full md:w-[50%]">
             <div className="h-full rounded-[2rem] bg-white p-6 md:p-12 shadow-[0_24px_80px_rgba(0,0,0,0.06),0_12px_32px_rgba(0,0,0,0.04)] border border-[var(--line)]">
-              <h3 className="text-center text-[1.6rem] font-bold tracking-tight text-[var(--ink-strong)] mb-8">Heva One</h3>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[var(--brand)]/10 blur-[60px] rounded-full pointer-events-none" />
+              <div className="flex justify-center mb-8 relative">
+                <span className="absolute inset-0 bg-[var(--brand)] blur-[20px] opacity-20 rounded-full" />
+                <h3 className="relative text-center text-[1.8rem] font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[var(--ink-strong)] to-[var(--brand-deep)]">HevaONE</h3>
+              </div>
               <ul className="space-y-0">
                 {COMPARISON_ROWS.map((row, i) => (
                   <li key={row.feature} className={`flex items-center gap-4 py-4 ${i !== COMPARISON_ROWS.length - 1 ? 'border-b border-slate-100' : ''}`}>

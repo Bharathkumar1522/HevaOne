@@ -79,9 +79,9 @@ export function GlobalSection() {
                 <div className="mt-8 flex-1 w-full rounded-[1.1rem] bg-[color:color-mix(in_srgb,var(--surface-muted)_50%,white)] border border-[color:color-mix(in_srgb,var(--line)_60%,transparent)] p-5 relative overflow-hidden group-hover:bg-slate-50 transition-colors flex flex-col justify-center">
                   <div className="space-y-3 w-full">
                     {['UK GDPR', 'AUS Fair Work', 'EU Working Time'].map((law) => (
-                      <div key={law} className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200/60 pb-3 last:border-0 last:pb-0">
-                        <span className="text-[0.75rem] font-bold uppercase tracking-[0.05em] text-[var(--ink-soft)]">{law}</span>
-                        <div className="flex items-center gap-2 rounded-full bg-emerald-50 px-2.5 py-1.5 border border-emerald-100/50 shadow-sm">
+                      <div key={law} className="flex flex-nowrap items-center justify-between gap-2 border-b border-slate-200/60 pb-3 last:border-0 last:pb-0">
+                        <span className="text-[0.7rem] md:text-[0.75rem] font-bold uppercase tracking-[0.05em] text-[var(--ink-soft)] truncate">{law}</span>
+                        <div className="flex shrink-0 items-center gap-2 rounded-full bg-emerald-50 px-2.5 py-1.5 border border-emerald-100/50 shadow-sm">
                            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)]" />
                            <span className="text-[0.62rem] font-bold text-emerald-700 tracking-wide uppercase">Active</span>
                         </div>

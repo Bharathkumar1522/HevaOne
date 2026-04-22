@@ -20,15 +20,15 @@ const editorial = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Heva One | The Global Operating System",
+  title: "HevaONE | The Global Operating System",
   description:
-    "One Platform. Every Shift. Every Sale. Everywhere. Heva One unifies your Workforce, POS, and Operations into one beautiful dashboard.",
+    "One Platform. Every Shift. Every Sale. Everywhere. HevaONE unifies your Workforce, POS, and Operations into one beautiful dashboard.",
   metadataBase: new URL("https://hevaone.com"),
   alternates: { canonical: "https://hevaone.com" },
   keywords: ["POS", "Workforce Management", "Operating System", "B2B SaaS", "Global Commerce", "Scheduling Software", "Payroll Integration"],
-  authors: [{ name: "Heva One" }],
-  creator: "Heva One",
-  publisher: "Heva One",
+  authors: [{ name: "HevaONE" }],
+  creator: "HevaONE",
+  publisher: "HevaONE",
   robots: {
     index: true,
     follow: true,
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Heva One | The Global Operating System",
+    title: "HevaONE | The Global Operating System",
     description: "The unified global operating system for modern business. Unify Workforce, POS, and Operations into one dashboard.",
     url: "https://hevaone.com",
-    siteName: "Heva One",
+    siteName: "HevaONE",
     images: [
       {
         url: "https://hevaone.com/hero-mockup.png",
         width: 1200,
         height: 630,
-        alt: "Heva One Dashboard",
+        alt: "HevaONE Dashboard",
       },
     ],
     locale: "en_GB",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Heva One | The Global Operating System",
+    title: "HevaONE | The Global Operating System",
     description: "The unified global operating system for modern business.",
     images: ["https://hevaone.com/hero-mockup.png"],
   },
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Heva One",
+  name: "HevaONE",
   operatingSystem: "Web, iOS, Android",
   applicationCategory: "BusinessApplication",
-  description: "One Platform. Every Shift. Every Sale. Everywhere. Heva One unifies your Workforce, POS, and Operations into one dashboard.",
+  description: "One Platform. Every Shift. Every Sale. Everywhere. HevaONE unifies your Workforce, POS, and Operations into one dashboard.",
   image: "https://hevaone.com/hero-mockup.png",
   offers: {
     "@type": "Offer",

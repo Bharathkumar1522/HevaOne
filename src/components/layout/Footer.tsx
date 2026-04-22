@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import { Reveal } from "@/components/ui/Reveal";
 
 const FOOTER_LINKS = {
@@ -28,18 +28,18 @@ export function Footer() {
             <a href="#home" className="group inline-flex items-center gap-2.5">
               <Image
                 src="/logo.png"
-                alt="Heva One Icon"
+                alt="HevaONE Icon"
                 width={40}
                 height={40}
                 className="h-[1.65rem] w-auto opacity-90 saturate-[1.1] transition-all duration-300 group-hover:scale-110 group-hover:opacity-100"
               />
               <div className="flex items-baseline gap-[2px]">
                 <span className="text-[1.15rem] font-bold tracking-tight text-[var(--ink-strong)]">Heva</span>
-                <span className="text-[1.15rem] font-bold tracking-tight text-[var(--brand)]">One</span>
+                <span className="text-[1.15rem] font-bold tracking-tight text-[var(--brand)]">ONE</span>
               </div>
             </a>
             <p className="mt-4 max-w-xl text-[0.92rem] leading-[1.8] text-[var(--ink-soft)]">
-              Heva One is built to bring Workforce, POS, and Operations into one clear system so teams can run daily operations with less switching and fewer handoffs.
+              HevaONE is built to bring Workforce, POS, and Operations into one clear system so teams can run daily operations with less switching and fewer handoffs.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom mt-16 flex flex-col items-center md:flex-row justify-between gap-4 border-t border-[var(--line)] pt-6 text-[0.85rem] text-[var(--ink-soft)] text-center md:text-left">
-          <p>Copyright {new Date().getFullYear()} Heva One Ltd. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} HevaONE Ltd. All rights reserved.</p>
           <div className="flex gap-4">
             <span className="flex items-center justify-center md:justify-start gap-1.5"><span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--ok)]" /> All systems operational</span>
           </div>
