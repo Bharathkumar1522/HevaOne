@@ -85,8 +85,8 @@ export function IndustriesSection() {
             </h2>
           </Reveal>
 
-          <div className="-mx-4 flex overflow-x-auto px-4 pb-4 sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            <div className="flex w-max gap-3 sm:w-auto sm:flex-wrap">
+          <div className="-mx-4 flex overflow-x-auto overflow-y-hidden px-4 py-4 -my-4 sm:mx-0 sm:px-0 sm:py-0 sm:my-0 sm:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex w-max gap-3 sm:w-auto sm:flex-wrap items-center">
               {INDUSTRIES.map((item, idx) => (
                 <Reveal key={item.id} delay={idx * 30} direction="up" className="inline-block shrink-0 cursor-pointer">
                   <button
