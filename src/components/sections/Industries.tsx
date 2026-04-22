@@ -111,17 +111,22 @@ export function IndustriesSection() {
             
             {/* Massive App Preview Bento */}
             <Reveal delay={0} direction="scale" className="lg:col-span-2 lg:row-span-2">
-              <article className="relative overflow-hidden rounded-[2rem] h-full min-h-[14rem] md:min-h-[16rem] lg:min-h-[24rem] shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.03),0_24px_48px_rgba(15,23,42,0.08)] bg-white">
-                <Image
-                  src={active.image}
-                  alt={`${active.title} workflow in Heva One`}
-                  fill
-                  loading="lazy"
-                  sizes="(max-width: 1024px) 100vw, 66vw"
-                  className="object-cover transition-all duration-700 ease-in-out scale-100 group-hover:scale-[1.02]"
-                />
-                <div className={`absolute inset-0 bg-gradient-to-tr ${active.accent}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#061122]/32 via-transparent to-transparent" />
+              <article className="group relative overflow-hidden rounded-[2rem] h-full min-h-[14rem] md:min-h-[16rem] lg:min-h-[24rem] shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.03),0_24px_48px_rgba(15,23,42,0.08)] bg-[var(--surface-muted)]">
+                {INDUSTRIES.map((item) => (
+                  <Image
+                    key={item.id}
+                    src={item.image}
+                    alt={`${item.title} workflow`}
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    className={`object-cover transition-all duration-700 ease-in-out ${
+                      activeId === item.id ? "opacity-100 scale-100 group-hover:scale-[1.03]" : "opacity-0 scale-[1.05]"
+                    }`}
+                  />
+                ))}
+                <div className={`absolute inset-0 bg-gradient-to-tr ${active.accent} mix-blend-overlay transition-colors duration-700`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#061122]/32 via-transparent to-transparent pointer-events-none" />
               </article>
             </Reveal>
 
