@@ -85,23 +85,25 @@ export function IndustriesSection() {
             </h2>
           </Reveal>
 
-          <div className="flex flex-wrap gap-2.5">
-            {INDUSTRIES.map((item, idx) => (
-              <Reveal key={item.id} delay={idx * 30} direction="up" className="inline-block">
-                <button
-                  type="button"
-                  onClick={() => startTransition(() => setActiveId(item.id))}
-                  className={`relative flex items-center gap-2 rounded-xl px-4 py-2 text-[0.85rem] font-bold border transition-all duration-300 ${
-                    activeId === item.id
-                      ? "border-[color:color-mix(in_srgb,var(--brand)_30%,transparent)] bg-[color:color-mix(in_srgb,var(--brand)_6%,transparent)] text-[var(--brand)] shadow-[0_4px_12px_rgba(42,77,215,0.06),inset_0_1px_0_rgba(255,255,255,1)]"
-                      : "border-[var(--line)] bg-white/60 text-[var(--ink-soft)] hover:border-[color:color-mix(in_srgb,var(--line)_80%,#000)] hover:bg-white hover:text-[var(--ink)] shadow-[0_1px_2px_rgba(15,23,42,0.02)]"
-                  } active:scale-[0.98]`}
-                >
-                  <item.icon size={16} className={activeId === item.id ? "text-[var(--brand)]" : ""} />
-                  {item.title}
-                </button>
-              </Reveal>
-            ))}
+          <div className="-mx-4 flex overflow-x-auto px-4 pb-4 sm:mx-0 sm:px-0 sm:pb-0 sm:overflow-visible [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="flex w-max gap-3 sm:w-auto sm:flex-wrap">
+              {INDUSTRIES.map((item, idx) => (
+                <Reveal key={item.id} delay={idx * 30} direction="up" className="inline-block shrink-0 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => startTransition(() => setActiveId(item.id))}
+                    className={`relative flex items-center gap-2.5 rounded-xl px-5 py-3 text-[0.9rem] font-bold border transition-all duration-300 ${
+                      activeId === item.id
+                        ? "border-[color:color-mix(in_srgb,var(--brand)_40%,transparent)] bg-[color:color-mix(in_srgb,var(--brand)_8%,transparent)] text-[var(--brand)] shadow-[0_4px_12px_rgba(42,77,215,0.08),inset_0_1px_0_rgba(255,255,255,1)]"
+                        : "border-[color:color-mix(in_srgb,var(--line)_80%,transparent)] bg-white/70 text-[var(--ink-soft)] hover:border-[var(--line)] hover:bg-white hover:text-[var(--ink)] shadow-[0_2px_4px_rgba(15,23,42,0.02)]"
+                    } active:scale-[0.96] hover:-translate-y-0.5`}
+                  >
+                    <item.icon size={18} className={activeId === item.id ? "text-[var(--brand)]" : ""} />
+                    {item.title}
+                  </button>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
 
