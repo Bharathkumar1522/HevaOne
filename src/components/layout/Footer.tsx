@@ -65,10 +65,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom mt-16 flex items-center justify-between border-t border-[var(--line)] pt-6 text-[0.85rem] text-[var(--ink-soft)]">
+        <div className="footer-bottom mt-16 flex flex-col items-center md:flex-row justify-between gap-4 border-t border-[var(--line)] pt-6 text-[0.85rem] text-[var(--ink-soft)] text-center md:text-left">
           <p>Copyright {new Date().getFullYear()} Heva One Ltd. All rights reserved.</p>
           <div className="flex gap-4">
-            <span className="flex items-center gap-1.5"><span className="h-1.5 w-1.5 rounded-full bg-[var(--ok)]" /> All systems operational</span>
+            <span className="flex items-center justify-center md:justify-start gap-1.5"><span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--ok)]" /> All systems operational</span>
           </div>
         </div>
       </Reveal>
