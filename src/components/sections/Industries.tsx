@@ -26,7 +26,7 @@ const INDUSTRIES: Industry[] = [
     ],
     accent: "from-[#1f53db]/24 via-[#1a4fc1]/10 to-transparent",
     icon: IconDevice,
-    image: "/hospitality_bg.png",
+    image: "/hospitality_bg.webp",
   },
   {
     id: "retail",
@@ -38,7 +38,7 @@ const INDUSTRIES: Industry[] = [
     ],
     accent: "from-[#315adf]/22 via-[#4b82ff]/10 to-transparent",
     icon: IconCurrency,
-    image: "/retail_bg.png",
+    image: "/retail_bg.webp",
   },
   {
     id: "healthcare",
@@ -50,7 +50,7 @@ const INDUSTRIES: Industry[] = [
     ],
     accent: "from-[#0e8ea0]/22 via-[#2584d7]/10 to-transparent",
     icon: IconShield,
-    image: "/healthcare_bg.png",
+    image: "/healthcare_bg.webp",
   },
   {
     id: "logistics",
@@ -62,7 +62,7 @@ const INDUSTRIES: Industry[] = [
     ],
     accent: "from-[#2a4dd7]/22 via-[#4477ff]/10 to-transparent",
     icon: IconMapPin,
-    image: "/logistics_bg.png",
+    image: "/logistics_bg.webp",
   },
 ];
 

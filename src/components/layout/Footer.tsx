@@ -27,7 +27,7 @@ export function Footer() {
           <div className="footer-brand-block">
             <a href="#home" className="group inline-flex items-center gap-2.5">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="HevaONE Icon"
                 width={40}
                 height={40}

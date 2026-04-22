@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "HevaONE",
     images: [
       {
-        url: "https://hevaone.com/hero-mockup.png",
+        url: "https://hevaone.com/hero-mockup.webp",
         width: 1200,
         height: 630,
         alt: "HevaONE Dashboard",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HevaONE | The Global Operating System",
     description: "The unified global operating system for modern business.",
-    images: ["https://hevaone.com/hero-mockup.png"],
+    images: ["https://hevaone.com/hero-mockup.webp"],
   },
 };
 
@@ -71,7 +71,7 @@ const jsonLd = {
   operatingSystem: "Web, iOS, Android",
   applicationCategory: "BusinessApplication",
   description: "One Platform. Every Shift. Every Sale. Everywhere. HevaONE unifies your Workforce, POS, and Operations into one dashboard.",
-  image: "https://hevaone.com/hero-mockup.png",
+  image: "https://hevaone.com/hero-mockup.webp",
   offers: {
     "@type": "Offer",
     price: "0",

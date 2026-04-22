@@ -74,7 +74,7 @@ export function HeroSection() {
           <div id="tour" className="hero-stage relative z-10 mt-16 w-full rounded-[2.5rem] bg-[color:color-mix(in_srgb,var(--brand)_6%,transparent)] border border-[color:color-mix(in_srgb,var(--brand)_15%,transparent)] p-6 md:p-8 shadow-[inset_0_2px_24px_rgba(67,56,202,0.08)]">
             <div className="hero-device hero-visual-primary relative aspect-[4/3] w-full rounded-[2rem] border-[1px] border-white/20 shadow-[0_45px_100px_rgba(15,23,42,0.18)] md:aspect-[21/10]">
               <Image
-                src="/hero-mockup.png"
+                src="/hero-mockup.webp"
                 alt="HevaONE management dashboard on a laptop interface"
                 fill
                 priority
@@ -87,7 +87,7 @@ export function HeroSection() {
             {/* Overlapping Callouts and Secondary Elements */}
             <div className="hero-device hero-visual-secondary absolute -bottom-10 -right-4 hidden aspect-[9/16] w-[22%] rounded-[1.8rem] md:block -rotate-2 transform-gpu shadow-[0_25px_60px_rgba(15,23,42,0.6)]">
               <Image
-                src="/hospitality_bg.png"
+                src="/hospitality_bg.webp"
                 alt="HevaONE staff app interface on a smartphone"
                 fill
                 sizes="20vw"

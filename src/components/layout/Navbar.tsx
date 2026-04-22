@@ -17,7 +17,7 @@ export function Navbar() {
         {/* Left: Logo */}
         <a href="#home" aria-label="Go to Home" className="group flex shrink-0 items-center gap-2.5 pl-3.5 pr-5 border-r border-slate-100">
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="HevaONE Logo"
             width={24}
             height={24}

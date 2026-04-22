@@ -38,7 +38,7 @@ export function ContactSection() {
             <div className="relative flex flex-col h-full overflow-hidden rounded-[2rem] bg-[#0a1128] border border-[var(--line)] shadow-[0_24px_50px_rgba(0,0,0,0.12)] p-6 md:p-10 justify-between">
               {/* Premium Background Visuals */}
               <div className="absolute inset-0">
-                <Image src="/hospitality_bg.png" alt="Premium Hospitality" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-30 mix-blend-luminosity" priority />
+                <Image src="/hospitality_bg.webp" alt="Premium Hospitality" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-30 mix-blend-luminosity" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128]/95 via-[#0a1128]/60 to-transparent" />
                 <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[80px] rounded-full" />
               </div>
