@@ -41,9 +41,9 @@ export function Reveal({
         }
       },
       {
-        // Fire the moment the element peeks 80px above the viewport bottom
-        // Negative bottom margin = "shrink the detection zone from the bottom"
-        rootMargin: "0px 0px -80px 0px",
+        // Fire early — when element is 20px from the viewport bottom edge.
+        // This gives the animation time to start before the user reaches it.
+        rootMargin: "0px 0px -20px 0px",
         threshold: 0,
       }
     );

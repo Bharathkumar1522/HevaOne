@@ -595,13 +595,10 @@ body {
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Hidden state — GPU-primed, invisible */
+/* Hidden state — invisible, no GPU layer yet */
 .reveal {
   opacity: 0;
-  /* translateY as fallback for browsers that skip the animation */
-  transform: translateY(40px) scale(0.98);
-  will-change: transform, opacity;
-  /* No CSS transition — animation handles everything */
+  transform: translateY(32px) scale(0.98);
 }
 
 .reveal[data-dir="left"]  { transform: translateX(-38px); }
@@ -612,23 +609,23 @@ body {
 .reveal.revealed {
   opacity: 1;
   transform: none;
-  will-change: auto;   /* release GPU layer after settle */
+  will-change: auto;
 
   /* default (up) */
-  animation: rv-up 740ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation: rv-up 600ms cubic-bezier(0.25, 1, 0.5, 1) both;
   animation-delay: var(--reveal-delay, 0ms);
 }
 .reveal.revealed[data-dir="left"]  {
   animation-name: rv-left;
-  animation-duration: 680ms;
+  animation-duration: 540ms;
 }
 .reveal.revealed[data-dir="right"] {
   animation-name: rv-right;
-  animation-duration: 680ms;
+  animation-duration: 540ms;
 }
 .reveal.revealed[data-dir="scale"] {
   animation-name: rv-scale;
-  animation-duration: 800ms;
+  animation-duration: 650ms;
 }
 
 .nav-shell {
@@ -852,15 +849,18 @@ header {
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+/* Only show custom scrollbar on pointer:fine devices (mouse/trackpad) — not on touch/mobile */
+@media (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--brand) 30%, #a19a8f);
+  ::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--brand) 22%, #c4c0bb);
+  }
 }
