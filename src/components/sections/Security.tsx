@@ -10,7 +10,7 @@ const SECURITY_ITEMS = [
   },
   {
     title: "Enterprise Privacy",
-    text: "Built to support GDPR and global data protection standards with role-aware access controls.",
+    text: "GDPR compliant and ready to expand abroad, with robust role-aware access controls.",
     icon: IconLock,
   },
 ];

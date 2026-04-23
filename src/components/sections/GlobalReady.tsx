@@ -1,7 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { IconClock, IconCurrency, IconMapPin, IconShield, IconArrowRight } from "@/components/ui/SiteIcons";
-
-const CURRENCIES = ["GBP", "USD", "INR", "AUD", "CAD"];
+import { IconClock, IconMapPin, IconShield, IconArrowRight } from "@/components/ui/SiteIcons";
 
 
 
@@ -17,8 +15,7 @@ export function GlobalSection() {
           </span>
           <h2 className="section-title mt-4">Operate across markets with one consistent operating model.</h2>
           <div className="legend-row mt-5">
-            <span className="legend-chip">Multi-Currency Aware</span>
-            <span className="legend-chip legend-chip-ok">Compliance Ready</span>
+            <span className="legend-chip legend-chip-ok">Expansion Ready</span>
             <span className="legend-chip legend-chip-icon">
               <IconMapPin size={11} />
               Multi-Region
@@ -31,37 +28,7 @@ export function GlobalSection() {
 
 
           <div className="global-capability-grid grid gap-5 md:grid-cols-2">
-            {/* ── BENTO 1: Massive Feature Row ── */}
-            <Reveal delay={0}>
-              <article className="group col-span-1 md:col-span-2 relative overflow-hidden flex flex-col md:flex-row items-center gap-10 rounded-[1.8rem] border border-transparent bg-[var(--surface)] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.03),0_4px_12px_rgba(15,23,42,0.02)] transition-all duration-300 hover:shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.05),0_12px_32px_rgba(15,23,42,0.04)] hover:-translate-y-px">
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--brand-soft)] to-transparent opacity-80" />
-                <div className="md:w-1/2 z-10">
-                  <span className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-[1rem] bg-[color:color-mix(in_srgb,var(--brand)_8%,transparent)] text-[var(--brand)] transition-transform duration-300 group-hover:scale-110`}>
-                    <IconCurrency size={26} />
-                  </span>
-                  <h3 className="text-2xl font-bold text-[var(--ink-strong)] tracking-tight">
-                    Multi-Currency Native
-                  </h3>
-                  <p className="mt-3 text-[1rem] leading-relaxed text-[var(--ink-soft)]">
-                    Automatic detection and rapid reconciliation for global commerce without painful FX math.
-                  </p>
-                </div>
-                
-                {/* Visual Widget inside Bento Box */}
-                <div className="md:w-1/2 w-full min-h-[12rem] md:min-h-[14rem] rounded-2xl bg-[color:color-mix(in_srgb,var(--surface-muted)_50%,white)] border border-[color:color-mix(in_srgb,var(--line)_60%,transparent)] shadow-[inset_0_2px_12px_rgba(0,0,0,0.02)] relative flex items-center justify-center overflow-hidden p-5 z-10 group-hover:bg-slate-50 transition-colors">
-                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-                    {CURRENCIES.map((currency, i) => (
-                      <span key={currency} className={`flex items-center justify-center rounded-xl border border-white bg-white/60 shadow-sm px-4 py-3 text-sm font-bold tracking-[0.08em] text-[var(--brand-deep)] backdrop-blur transition-all duration-500 group-hover:scale-105 group-hover:bg-white`} style={{ transitionDelay: `${i * 30}ms` }}>
-                        {currency}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out" />
-                </div>
-              </article>
-            </Reveal>
-
-            {/* ── BENTO 2: Global Compliance ── */}
+            {/* ── BENTO 1: Expansion Ready (previously Global Compliance) ── */}
             <Reveal delay={80}>
               <article className="group relative overflow-hidden flex flex-col h-full rounded-[1.8rem] border border-transparent bg-[var(--surface)] p-6 md:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.03),0_4px_12px_rgba(15,23,42,0.02)] transition-all duration-300 hover:shadow-[inset_0_1px_0_rgba(255,255,255,1),0_0_0_1px_rgba(0,0,0,0.05),0_12px_32px_rgba(15,23,42,0.04)] hover:-translate-y-px hover:scale-[0.995]">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-80" />
@@ -69,16 +36,16 @@ export function GlobalSection() {
                   <IconShield size={22} className="text-[var(--ink-strong)]" />
                 </span>
                 <h3 className="text-xl font-bold text-[var(--ink-strong)] tracking-tight">
-                  Global Compliance
+                  Expansion Ready
                 </h3>
                 <p className="mt-2.5 text-[0.95rem] leading-relaxed text-[var(--ink-soft)]">
-                  Built-in logic for regional labor laws and break requirements.
+                  Fully GDPR compliant locally and ready to adapt to new regions abroad.
                 </p>
 
                 {/* Widget */}
                 <div className="mt-8 flex-1 w-full rounded-[1.1rem] bg-[color:color-mix(in_srgb,var(--surface-muted)_50%,white)] border border-[color:color-mix(in_srgb,var(--line)_60%,transparent)] p-5 relative overflow-hidden group-hover:bg-slate-50 transition-colors flex flex-col justify-center">
                   <div className="space-y-3 w-full">
-                    {['UK GDPR', 'AUS Fair Work', 'EU Working Time'].map((law) => (
+                    {['GDPR Compliant', 'Role-Aware Access', 'Ready for Expansion'].map((law) => (
                       <div key={law} className="flex flex-nowrap items-center justify-between gap-2 border-b border-slate-200/60 pb-3 last:border-0 last:pb-0">
                         <span className="text-[0.7rem] md:text-[0.75rem] font-bold uppercase tracking-[0.05em] text-[var(--ink-soft)] truncate">{law}</span>
                         <div className="flex shrink-0 items-center gap-2 rounded-full bg-emerald-50 px-2.5 py-1.5 border border-emerald-100/50 shadow-sm">

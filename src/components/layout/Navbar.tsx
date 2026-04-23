@@ -24,7 +24,7 @@ export function Navbar() {
             className="h-5 w-auto saturate-[1.1] transition-transform duration-300 group-hover:scale-110"
             priority
           />
-          <div className="flex items-baseline gap-[3px]">
+          <div className="flex items-baseline gap-0">
             <span className="text-[0.95rem] font-extrabold tracking-tight text-[var(--ink-strong)]">Heva</span>
             <span className="text-[0.95rem] font-extrabold tracking-tight text-[var(--brand)]">ONE</span>
           </div>
@@ -46,8 +46,8 @@ export function Navbar() {
 
         {/* Right: Actions */}
         <div className="hidden md:flex shrink-0 items-center pl-2">
-          <Link href="mailto:Info@hetupathways.com" className="flex flex-1 items-center justify-center rounded-[1.5rem] bg-[var(--brand)] px-5 py-[0.5rem] text-[0.82rem] font-bold text-white shadow-[0_2px_8px_rgba(67,56,202,0.25)] transition-transform hover:scale-105 hover:bg-[var(--brand-deep)]">
-            Get Started
+          <Link href="https://app.hetupathways.com/" className="flex flex-1 items-center justify-center rounded-[1.5rem] bg-[var(--brand)] px-5 py-[0.5rem] text-[0.82rem] font-bold text-white shadow-[0_2px_8px_rgba(67,56,202,0.25)] transition-transform hover:scale-105 hover:bg-[var(--brand-deep)]">
+            Sign In
           </Link>
         </div>
 

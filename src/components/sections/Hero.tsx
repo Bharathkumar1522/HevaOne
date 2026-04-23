@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
-import { IconCurrency, IconDevice, IconLayers, IconSpark } from "@/components/ui/SiteIcons";
+import { IconDevice, IconLayers, IconSpark } from "@/components/ui/SiteIcons";
 
 const HERO_STATS = [
   {
@@ -14,11 +14,6 @@ const HERO_STATS = [
     label: "Runs across devices",
     icon: IconDevice,
   },
-  {
-    value: "GBP, USD, INR, AUD, CAD",
-    label: "Global-ready setup",
-    icon: IconCurrency,
-  },
 ];
 
 export function HeroSection() {
@@ -30,7 +25,7 @@ export function HeroSection() {
         <div className="hero-copy relative z-20 flex flex-col items-center max-w-[64rem] text-center">
           <span className="hero-kicker-enter section-kicker mb-6">
             <span className="feature-dot" />
-            Unified Global OS
+            The unified operating system for modern business.
           </span>
 
           <h1 className="hero-title-enter text-[clamp(2.8rem,7vw,5.5rem)] font-bold leading-[1.02] tracking-[-0.05em] text-[var(--ink-strong)] text-balance">
@@ -42,8 +37,8 @@ export function HeroSection() {
           </p>
 
           <div className="hero-cta-enter hero-actions mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Link href="mailto:Info@hetupathways.com" aria-label="Contact us" className="btn btn-primary px-6 py-4 text-[1rem]">
-              Get Started for Free
+            <Link href="https://app.hetupathways.com/" aria-label="Sign In for Free" className="btn btn-primary px-6 py-4 text-[1rem]">
+              Sign In for Free
               <IconSpark size={16} />
             </Link>
           </div>

@@ -1,39 +1,33 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { IconChat, IconClock, IconDevice, IconDocument, IconLayers, IconShield, IconCheck, IconX } from "@/components/ui/SiteIcons";
+import { IconClock, IconDevice, IconDocument, IconLayers, IconShield, IconCheck, IconX } from "@/components/ui/SiteIcons";
 
 const COMPARISON_ROWS = [
   {
     feature: "Scheduling",
     oldWay: "Separate App ($$$)",
-    hevaOne: "Integrated",
+    HevaONE: "Integrated",
     glyph: "SC",
     icon: IconClock,
   },
   {
     feature: "Attendance",
     oldWay: "Manual / Honor System",
-    hevaOne: "Photo & GPS Verified",
+    HevaONE: "Photo & GPS Verified",
     glyph: "AT",
     icon: IconShield,
   },
   {
     feature: "Sales / POS",
     oldWay: "Separate Hardware ($$$)",
-    hevaOne: "Any Device (iOS/Android/Web)",
+    HevaONE: "Any Device (iOS/Android/Web)",
     glyph: "POS",
     icon: IconDevice,
   },
-  {
-    feature: "Team Comms",
-    oldWay: "Messy Group Chats",
-    hevaOne: "Built-in Staff App",
-    glyph: "CM",
-    icon: IconChat,
-  },
+
   {
     feature: "Payroll",
     oldWay: "5+ Hours of Data Entry",
-    hevaOne: "One-Click CSV Export",
+    HevaONE: "One-Click CSV Export",
     glyph: "PR",
     icon: IconDocument,
   },
@@ -66,7 +60,7 @@ export function ComparisonSection() {
                 {COMPARISON_ROWS.map((row, i) => (
                   <li key={row.feature} className={`flex items-center gap-4 py-4 ${i !== COMPARISON_ROWS.length - 1 ? 'border-b border-slate-100' : ''}`}>
                      <IconCheck className="text-emerald-500 shrink-0" size={20} strokeWidth={3}/>
-                     <span className="font-bold text-[var(--ink-strong)] text-[0.95rem] tracking-tight">{row.feature} &mdash; {row.hevaOne}</span>
+                     <span className="font-bold text-[var(--ink-strong)] text-[0.95rem] tracking-tight">{row.feature} &mdash; {row.HevaONE}</span>
                   </li>
                 ))}
               </ul>

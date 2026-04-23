@@ -20,7 +20,7 @@ const editorial = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HevaONE | The Global Operating System",
+  title: "HevaONE | The unified operating system for modern business.",
   description:
     "One Platform. Every Shift. Every Sale. Everywhere. HevaONE unifies your Workforce, POS, and Operations into one beautiful dashboard.",
   metadataBase: new URL("https://hevaone.com"),
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "HevaONE | The Global Operating System",
-    description: "The unified global operating system for modern business. Unify Workforce, POS, and Operations into one dashboard.",
+    title: "HevaONE | The unified operating system for modern business.",
+    description: "The unified operating system for modern business. Unify Workforce, POS, and Operations into one dashboard.",
     url: "https://hevaone.com",
     siteName: "HevaONE",
     images: [
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HevaONE | The Global Operating System",
-    description: "The unified global operating system for modern business.",
+    title: "HevaONE | The unified operating system for modern business.",
+    description: "The unified operating system for modern business.",
     images: ["https://hevaone.com/hero-mockup.webp"],
   },
 };

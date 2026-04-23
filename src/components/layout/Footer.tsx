@@ -33,7 +33,7 @@ export function Footer() {
                 height={40}
                 className="h-[1.65rem] w-auto opacity-90 saturate-[1.1] transition-all duration-300 group-hover:scale-110 group-hover:opacity-100"
               />
-              <div className="flex items-baseline gap-[2px]">
+              <div className="flex items-baseline gap-0">
                 <span className="text-[1.15rem] font-bold tracking-tight text-[var(--ink-strong)]">Heva</span>
                 <span className="text-[1.15rem] font-bold tracking-tight text-[var(--brand)]">ONE</span>
               </div>

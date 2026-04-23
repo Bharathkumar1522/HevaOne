@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { type ComponentType, startTransition, useState } from "react";
 import { Reveal } from "@/components/ui/Reveal";
-import { IconArrowRight, IconChat, IconCurrency, IconDevice, IconMapPin, IconShield } from "@/components/ui/SiteIcons";
+import { IconArrowRight, IconCurrency, IconDevice, IconMapPin, IconShield } from "@/components/ui/SiteIcons";
 
 type Industry = {
   id: string;
@@ -163,9 +163,7 @@ export function IndustriesSection() {
                    <span className="flex items-center gap-3 rounded-xl bg-white px-3 py-2.5 shadow-sm border border-[var(--line)] text-[0.8rem] font-bold text-[var(--ink-strong)]">
                      <span className="h-2 w-2 rounded-full bg-indigo-500" /> Unified Data Flow
                    </span>
-                   <span className="flex items-center gap-3 rounded-xl bg-white px-3 py-2.5 shadow-sm border border-[var(--line)] text-[0.8rem] font-bold text-[var(--ink-strong)]">
-                     <IconChat size={14} className="text-blue-500" /> Team Clarity
-                   </span>
+
                  </div>
               </article>
             </Reveal>
