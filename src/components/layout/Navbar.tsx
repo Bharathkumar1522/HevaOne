@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 const NAV_ITEMS = [
   { href: "#home", label: "Overview" },
@@ -10,6 +12,23 @@ const NAV_ITEMS = [
 ];
 
 export function Navbar() {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (detailsRef.current && detailsRef.current.open) {
+        detailsRef.current.open = false;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("touchmove", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("touchmove", handleScroll);
+    };
+  }, []);
+
   return (
     <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[min(94vw,700px)]">
       <nav className="flex items-center justify-between rounded-[2rem] border border-slate-100/80 bg-white p-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.04),0_2px_10px_rgba(0,0,0,0.02)] transition-all">
@@ -17,7 +36,7 @@ export function Navbar() {
         {/* Left: Logo */}
         <a href="#home" aria-label="Go to Home" className="group flex shrink-0 items-center gap-2.5 pl-3.5 pr-5 border-r border-slate-100">
           <Image
-            src="/logo.webp"
+            src="/logo.png"
             alt="HevaONE Logo"
             width={24}
             height={24}
@@ -46,13 +65,13 @@ export function Navbar() {
 
         {/* Right: Actions */}
         <div className="hidden md:flex shrink-0 items-center pl-2">
-          <Link href="https://app.hetupathways.com/" className="flex flex-1 items-center justify-center rounded-[1.5rem] bg-[var(--brand)] px-5 py-[0.5rem] text-[0.82rem] font-bold text-white shadow-[0_2px_8px_rgba(67,56,202,0.25)] transition-transform hover:scale-105 hover:bg-[var(--brand-deep)]">
+          <a href="https://app.hetupathways.com/" target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center rounded-[1.5rem] bg-[var(--brand)] px-5 py-[0.5rem] text-[0.82rem] font-bold text-white shadow-[0_2px_8px_rgba(67,56,202,0.25)] transition-transform hover:scale-105 hover:bg-[var(--brand-deep)]">
             Sign In
-          </Link>
+          </a>
         </div>
 
         {/* Mobile menu toggle (super minimal) */}
-        <details className="group relative ml-2 md:hidden">
+        <details ref={detailsRef} className="group relative ml-2 md:hidden">
           <summary aria-label="Toggle Mobile Menu" aria-haspopup="menu" className="list-none flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-[var(--surface-muted)] text-[var(--ink-strong)]">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           </summary>

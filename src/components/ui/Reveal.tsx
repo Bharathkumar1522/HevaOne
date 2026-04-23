@@ -33,9 +33,16 @@ export function Reveal({
       return;
     }
 
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        reveal();
+      }
+    };
+    window.addEventListener("pageshow", handlePageShow);
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting || entry.boundingClientRect.top < window.innerHeight) {
           reveal();
           observer.disconnect();
         }
@@ -49,7 +56,10 @@ export function Reveal({
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("pageshow", handlePageShow);
+    };
   }, []);
 
   return (

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconDevice, IconLayers, IconSpark } from "@/components/ui/SiteIcons";
 
@@ -37,10 +36,10 @@ export function HeroSection() {
           </p>
 
           <div className="hero-cta-enter hero-actions mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Link href="https://app.hetupathways.com/" aria-label="Sign In for Free" className="btn btn-primary px-6 py-4 text-[1rem]">
-              Sign In for Free
+            <a href="#contact" aria-label="Check the demo for free" className="btn btn-primary px-6 py-4 text-[1rem]">
+              Check the demo for free
               <IconSpark size={16} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
