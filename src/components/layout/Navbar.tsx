@@ -87,6 +87,16 @@ export function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="mt-1 border-t border-slate-100 pt-2">
+                <a 
+                  href="https://app.hetupathways.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center justify-center rounded-xl bg-[var(--brand)] px-4 py-2.5 text-[0.85rem] font-bold text-white shadow-[0_2px_8px_rgba(67,56,202,0.25)] transition-transform active:scale-95"
+                >
+                  Sign In
+                </a>
+              </li>
             </ul>
           </div>
         </details>
