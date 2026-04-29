@@ -26,7 +26,7 @@ const INDUSTRIES: Industry[] = [
     ],
     accent: "from-[#1f53db]/24 via-[#1a4fc1]/10 to-transparent",
     icon: IconDevice,
-    image: "/hospitality_bg.webp",
+    image: "/hospitality_pos.png",
   },
   {
     id: "retail",
